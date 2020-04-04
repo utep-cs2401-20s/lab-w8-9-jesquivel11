@@ -250,7 +250,6 @@ class AminoAcidLL{
         }
       }
     }
-
     return null;
   }
 }
