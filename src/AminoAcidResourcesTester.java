@@ -58,5 +58,16 @@ class AminoAcidResourcesTester{
       }
     }
   }
+  @Test
+  public void testFromRNA(){
+    String rna1 = "AGUGGACAUAAAAGC";
+    AminoAcidLL first = AminoAcidLL.createFromRNASequence(rna1);
+    AminoAcidLL.sort(first);
+    String rna2 = "";
+    AminoAcidLL second = AminoAcidLL.createFromRNASequence(rna2);
+
+    System.out.println("Total aminoacidCount difference \n");
+    System.out.print(first.aminoAcidCompare(second));
+  }
 
 }
